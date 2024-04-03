@@ -10,7 +10,23 @@ public class Point {
 		this.y = y;
 	}
 
-	//equals() 메소드를 작성하세요.
 
+
+	//equals() 메소드를 작성하세요.
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Point) {
+			Point other = (Point)obj;
+			return x == other.x;
+		}
+		return super.equals(obj);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
 	
 }

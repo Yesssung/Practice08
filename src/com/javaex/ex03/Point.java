@@ -11,5 +11,12 @@ public class Point {
 	}
 
 	//toString()을 작성 하세요
+	
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
+
 
 }
