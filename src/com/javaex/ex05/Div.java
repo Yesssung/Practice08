@@ -11,7 +11,7 @@ public class Div {
     }
 
     public int calculate() {
-    	return this.a / this.b;
+    	return a / b;
     }
 
 	public int getA() {

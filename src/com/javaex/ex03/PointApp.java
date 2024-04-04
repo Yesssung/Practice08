@@ -7,7 +7,6 @@ public class PointApp {
 		Point p = new Point(3, 3);
 		
 		System.out.println(p.toString());
-
 	}
 
 }

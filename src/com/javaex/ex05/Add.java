@@ -31,7 +31,7 @@ public class Add {
 
 
     public int calculate() {
-    	return this.a + this.b ;
+    	return a + b ;
     	
     }
 

@@ -20,14 +20,23 @@ public class LastNumberApp {
 		int result;
 		
 		//아래부분을 try~catch문을 사용하여 수정하세요
+//		try {
+//			result = intArray[3];
+//		} catch (ArrayIndexOutOfBoundsException e) { 
+//			
+//		} 
+//			System.out.println("배열의 범위를 넘었습니다.");
+//	}
+	
+	// 모범 답안 // 구체적 예외(ArithmeticException 등)는 앞에서 일반적 예외(Exception)는 뒤쪽에서
 		try {
-		result = intArray[3];
+			result = intArray[3];
+			System.out.println(result);	
 		} catch (ArrayIndexOutOfBoundsException e) {
+			System.err.println("배열의 범위를 넘었습니다.");
+		} catch (Exception e) { // 앞에 구체적인 예외를 잡았어도 뒤에 일반적 예외 꼭 한번 더 해주는 습관 들이기
 			e.printStackTrace();
 		}
-		
-		System.out.println("예외처리 종료!");
-		
 	}
 
 }

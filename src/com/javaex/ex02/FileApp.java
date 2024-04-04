@@ -4,13 +4,17 @@ import java.io.IOException;
 
 public class FileApp {
 
+	
+	// 2번 문제: Throw 했는데도 왜 에러가 발생했을까?
+	// IOException은 대표적인 CheckedException 이라서 Throw 해도 반드시 예외처리가 필요하기 때문
 	public static void main(String[] args) {
 
-		FileApp file = new FileApp();
 		try {
 			fileRead();
 		} catch(IOException e) {
-			System.out.println("파일이 없습니다.");
+			System.err.println("파일이 없습니다.");
+		} catch(Exception e) {
+			e.printStackTrace();
 		}
 		
 
